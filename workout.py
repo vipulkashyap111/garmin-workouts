@@ -240,13 +240,15 @@ def plan(as_json):
         print(json.dumps(p, indent=2))
         return
     print("\n📋 Training Plan")
-    if p.get("currentPlan"):
-        print(f"   {p['currentPlan']}")
+    current = p.get("currentPlan") or p.get("current_plan")
+    if current:
+        print(f"   {current}")
     else:
         print("   (no plan set)")
-    if p.get("weeklySchedule"):
+    schedule = p.get("weeklySchedule") or p.get("weekly_schedule")
+    if schedule:
         print("\n   Weekly schedule:")
-        for day, workout in p["weeklySchedule"].items():
+        for day, workout in schedule.items():
             print(f"   {day}: {workout}")
 
 
