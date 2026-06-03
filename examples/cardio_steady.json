@@ -1,0 +1,59 @@
+{
+  "workoutName": "Steady State Cardio 30min",
+  "description": "30 minute moderate cardio with warmup and cooldown.",
+  "sportType": {
+    "sportTypeId": 3,
+    "sportTypeKey": "training"
+  },
+  "workoutSegments": [
+    {
+      "segmentOrder": 1,
+      "sportType": {
+        "sportTypeId": 3,
+        "sportTypeKey": "training"
+      },
+      "workoutSteps": [
+        {
+          "type": "ExecutableStepDTO",
+          "stepOrder": 1,
+          "stepType": { "stepTypeId": 1, "stepTypeKey": "warmup" },
+          "endCondition": { "conditionTypeId": 2, "conditionTypeKey": "time" },
+          "endConditionValue": 300.0,
+          "description": "Easy pace warmup"
+        },
+        {
+          "type": "ExecutableStepDTO",
+          "stepOrder": 2,
+          "stepType": { "stepTypeId": 3, "stepTypeKey": "interval" },
+          "endCondition": { "conditionTypeId": 2, "conditionTypeKey": "time" },
+          "endConditionValue": 600.0,
+          "description": "Moderate effort"
+        },
+        {
+          "type": "ExecutableStepDTO",
+          "stepOrder": 3,
+          "stepType": { "stepTypeId": 3, "stepTypeKey": "interval" },
+          "endCondition": { "conditionTypeId": 2, "conditionTypeKey": "time" },
+          "endConditionValue": 600.0,
+          "description": "Push slightly harder"
+        },
+        {
+          "type": "ExecutableStepDTO",
+          "stepOrder": 4,
+          "stepType": { "stepTypeId": 3, "stepTypeKey": "interval" },
+          "endCondition": { "conditionTypeId": 2, "conditionTypeKey": "time" },
+          "endConditionValue": 600.0,
+          "description": "Maintain steady effort"
+        },
+        {
+          "type": "ExecutableStepDTO",
+          "stepOrder": 5,
+          "stepType": { "stepTypeId": 2, "stepTypeKey": "cooldown" },
+          "endCondition": { "conditionTypeId": 2, "conditionTypeKey": "time" },
+          "endConditionValue": 300.0,
+          "description": "Easy pace cooldown"
+        }
+      ]
+    }
+  ]
+}

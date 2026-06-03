@@ -1,0 +1,350 @@
+{
+  "workoutName": "Reactive Speed Micro",
+  "description": "15-min plyo + reactive ankle work for split-step explosiveness. Pogo hops, ankle hops, lateral pogos, skater bounds, eccentric calf raises, rope finisher. Run 2x/week (Tue + Sat).",
+  "sportType": {
+    "sportTypeId": 5,
+    "sportTypeKey": "strength_training"
+  },
+  "workoutSegments": [
+    {
+      "segmentOrder": 1,
+      "sportType": {
+        "sportTypeId": 5,
+        "sportTypeKey": "strength_training"
+      },
+      "workoutSteps": [
+        {
+          "description": "2min warmup: easy rope skip + leg swings + ankle circles",
+          "endCondition": {
+            "conditionTypeId": 2,
+            "conditionTypeKey": "time"
+          },
+          "endConditionValue": 120,
+          "stepOrder": 1,
+          "stepType": {
+            "stepTypeId": 1,
+            "stepTypeKey": "warmup"
+          },
+          "type": "ExecutableStepDTO"
+        },
+        {
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 3,
+          "numberOfIterations": 3,
+          "skipLastRestStep": true,
+          "stepOrder": 2,
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "type": "RepeatGroupDTO",
+          "workoutSteps": [
+            {
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 20,
+              "stepOrder": 3,
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "type": "ExecutableStepDTO",
+              "category": "PLYO",
+              "exerciseName": "POGO_HOP",
+              "description": "Pogo Hops x20: feet together, MINIMUM ground contact, like a pogo stick. Stay on balls of feet. 'Ground is hot lava.'"
+            },
+            {
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 30,
+              "stepOrder": 4,
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "type": "ExecutableStepDTO",
+              "description": "Rest 30s"
+            }
+          ]
+        },
+        {
+          "endCondition": {
+            "conditionTypeId": 2,
+            "conditionTypeKey": "time"
+          },
+          "endConditionValue": 30,
+          "stepOrder": 5,
+          "stepType": {
+            "stepTypeId": 5,
+            "stepTypeKey": "rest"
+          },
+          "type": "ExecutableStepDTO",
+          "description": "Transition"
+        },
+        {
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 3,
+          "numberOfIterations": 3,
+          "skipLastRestStep": true,
+          "stepOrder": 6,
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "type": "RepeatGroupDTO",
+          "workoutSteps": [
+            {
+              "description": "Ankle Hops 15s: tiny hops, ALL calves/Achilles, max turnover. Knees barely bend.",
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 15,
+              "stepOrder": 7,
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "type": "ExecutableStepDTO"
+            },
+            {
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 30,
+              "stepOrder": 8,
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "type": "ExecutableStepDTO",
+              "description": "Rest 30s"
+            }
+          ]
+        },
+        {
+          "endCondition": {
+            "conditionTypeId": 2,
+            "conditionTypeKey": "time"
+          },
+          "endConditionValue": 30,
+          "stepOrder": 9,
+          "stepType": {
+            "stepTypeId": 5,
+            "stepTypeKey": "rest"
+          },
+          "type": "ExecutableStepDTO",
+          "description": "Transition"
+        },
+        {
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 3,
+          "numberOfIterations": 3,
+          "skipLastRestStep": true,
+          "stepOrder": 10,
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "type": "RepeatGroupDTO",
+          "workoutSteps": [
+            {
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 20,
+              "stepOrder": 11,
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "type": "ExecutableStepDTO",
+              "category": "PLYO",
+              "exerciseName": "LATERAL_HOP",
+              "description": "Lateral Pogos 10/side (20 total): side-to-side hops, minimum ground time. Sport-specific direction."
+            },
+            {
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 30,
+              "stepOrder": 12,
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "type": "ExecutableStepDTO",
+              "description": "Rest 30s"
+            }
+          ]
+        },
+        {
+          "endCondition": {
+            "conditionTypeId": 2,
+            "conditionTypeKey": "time"
+          },
+          "endConditionValue": 30,
+          "stepOrder": 13,
+          "stepType": {
+            "stepTypeId": 5,
+            "stepTypeKey": "rest"
+          },
+          "type": "ExecutableStepDTO",
+          "description": "Transition"
+        },
+        {
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 3,
+          "numberOfIterations": 3,
+          "skipLastRestStep": true,
+          "stepOrder": 14,
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "type": "RepeatGroupDTO",
+          "workoutSteps": [
+            {
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 12,
+              "stepOrder": 15,
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "type": "ExecutableStepDTO",
+              "category": "PLYO",
+              "exerciseName": "SKATER_HOP",
+              "description": "Skater Bounds 6/side (12 total): explosive lateral jump, land single-leg, HOLD 1 sec for stability before next jump."
+            },
+            {
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 45,
+              "stepOrder": 16,
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "type": "ExecutableStepDTO",
+              "description": "Rest 45s"
+            }
+          ]
+        },
+        {
+          "endCondition": {
+            "conditionTypeId": 2,
+            "conditionTypeKey": "time"
+          },
+          "endConditionValue": 45,
+          "stepOrder": 17,
+          "stepType": {
+            "stepTypeId": 5,
+            "stepTypeKey": "rest"
+          },
+          "type": "ExecutableStepDTO",
+          "description": "Transition"
+        },
+        {
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 3,
+          "numberOfIterations": 3,
+          "skipLastRestStep": true,
+          "stepOrder": 18,
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "type": "RepeatGroupDTO",
+          "workoutSteps": [
+            {
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 8,
+              "stepOrder": 19,
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "type": "ExecutableStepDTO",
+              "category": "CALF_RAISE",
+              "exerciseName": "SINGLE_LEG_CALF_RAISE",
+              "description": "Eccentric Calf Raises 8/leg: rise on both, lower SLOWLY (3 sec) on ONE leg. Builds Achilles stiffness for split-step pop."
+            },
+            {
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 30,
+              "stepOrder": 20,
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "type": "ExecutableStepDTO",
+              "description": "Rest 30s"
+            }
+          ]
+        },
+        {
+          "endCondition": {
+            "conditionTypeId": 2,
+            "conditionTypeKey": "time"
+          },
+          "endConditionValue": 30,
+          "stepOrder": 21,
+          "stepType": {
+            "stepTypeId": 5,
+            "stepTypeKey": "rest"
+          },
+          "type": "ExecutableStepDTO",
+          "description": "Transition: rope finisher"
+        },
+        {
+          "description": "Rope Skip Finisher 2min: alternate boxer skip / high knees / double-under attempts. Light feet.",
+          "endCondition": {
+            "conditionTypeId": 2,
+            "conditionTypeKey": "time"
+          },
+          "endConditionValue": 120,
+          "stepOrder": 22,
+          "stepType": {
+            "stepTypeId": 2,
+            "stepTypeKey": "cooldown"
+          },
+          "type": "ExecutableStepDTO"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "workoutName": "Upper Body Strength",
+  "description": "Chest, back, shoulders and arms. 60s rest between sets.",
+  "sportType": {
+    "sportTypeId": 5,
+    "sportTypeKey": "strength_training"
+  },
+  "workoutSegments": [
+    {
+      "segmentOrder": 1,
+      "sportType": {
+        "sportTypeId": 5,
+        "sportTypeKey": "strength_training"
+      },
+      "workoutSteps": [
+        {
+          "type": "RepeatGroupDTO",
+          "stepOrder": 1,
+          "stepType": { "stepTypeId": 6, "stepTypeKey": "repeat" },
+          "numberOfIterations": 4,
+          "endCondition": { "conditionTypeId": 7, "conditionTypeKey": "iterations" },
+          "endConditionValue": 4.0,
+          "skipLastRestStep": true,
+          "workoutSteps": [
+            {
+              "type": "ExecutableStepDTO",
+              "stepOrder": 2,
+              "stepType": { "stepTypeId": 3, "stepTypeKey": "interval" },
+              "endCondition": { "conditionTypeId": 10, "conditionTypeKey": "reps" },
+              "endConditionValue": 10.0,
+              "category": "BENCH_PRESS",
+              "exerciseName": "DUMBBELL_BENCH_PRESS"
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepOrder": 3,
+              "stepType": { "stepTypeId": 5, "stepTypeKey": "rest" },
+              "endCondition": { "conditionTypeId": 2, "conditionTypeKey": "time" },
+              "endConditionValue": 60.0
+            }
+          ]
+        },
+        {
+          "type": "RepeatGroupDTO",
+          "stepOrder": 4,
+          "stepType": { "stepTypeId": 6, "stepTypeKey": "repeat" },
+          "numberOfIterations": 4,
+          "endCondition": { "conditionTypeId": 7, "conditionTypeKey": "iterations" },
+          "endConditionValue": 4.0,
+          "skipLastRestStep": true,
+          "workoutSteps": [
+            {
+              "type": "ExecutableStepDTO",
+              "stepOrder": 5,
+              "stepType": { "stepTypeId": 3, "stepTypeKey": "interval" },
+              "endCondition": { "conditionTypeId": 10, "conditionTypeKey": "reps" },
+              "endConditionValue": 10.0,
+              "category": "ROW",
+              "exerciseName": "DUMBBELL_ROW"
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepOrder": 6,
+              "stepType": { "stepTypeId": 5, "stepTypeKey": "rest" },
+              "endCondition": { "conditionTypeId": 2, "conditionTypeKey": "time" },
+              "endConditionValue": 60.0
+            }
+          ]
+        },
+        {
+          "type": "RepeatGroupDTO",
+          "stepOrder": 7,
+          "stepType": { "stepTypeId": 6, "stepTypeKey": "repeat" },
+          "numberOfIterations": 3,
+          "endCondition": { "conditionTypeId": 7, "conditionTypeKey": "iterations" },
+          "endConditionValue": 3.0,
+          "skipLastRestStep": true,
+          "workoutSteps": [
+            {
+              "type": "ExecutableStepDTO",
+              "stepOrder": 8,
+              "stepType": { "stepTypeId": 3, "stepTypeKey": "interval" },
+              "endCondition": { "conditionTypeId": 10, "conditionTypeKey": "reps" },
+              "endConditionValue": 12.0,
+              "category": "SHOULDER_PRESS",
+              "exerciseName": "DUMBBELL_SHOULDER_PRESS"
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepOrder": 9,
+              "stepType": { "stepTypeId": 5, "stepTypeKey": "rest" },
+              "endCondition": { "conditionTypeId": 2, "conditionTypeKey": "time" },
+              "endConditionValue": 60.0
+            }
+          ]
+        },
+        {
+          "type": "RepeatGroupDTO",
+          "stepOrder": 10,
+          "stepType": { "stepTypeId": 6, "stepTypeKey": "repeat" },
+          "numberOfIterations": 3,
+          "endCondition": { "conditionTypeId": 7, "conditionTypeKey": "iterations" },
+          "endConditionValue": 3.0,
+          "skipLastRestStep": true,
+          "workoutSteps": [
+            {
+              "type": "ExecutableStepDTO",
+              "stepOrder": 11,
+              "stepType": { "stepTypeId": 3, "stepTypeKey": "interval" },
+              "endCondition": { "conditionTypeId": 10, "conditionTypeKey": "reps" },
+              "endConditionValue": 12.0,
+              "category": "CURL",
+              "exerciseName": "DUMBBELL_BICEPS_CURL"
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepOrder": 12,
+              "stepType": { "stepTypeId": 5, "stepTypeKey": "rest" },
+              "endCondition": { "conditionTypeId": 2, "conditionTypeKey": "time" },
+              "endConditionValue": 45.0
+            }
+          ]
+        },
+        {
+          "type": "RepeatGroupDTO",
+          "stepOrder": 13,
+          "stepType": { "stepTypeId": 6, "stepTypeKey": "repeat" },
+          "numberOfIterations": 3,
+          "endCondition": { "conditionTypeId": 7, "conditionTypeKey": "iterations" },
+          "endConditionValue": 3.0,
+          "skipLastRestStep": true,
+          "workoutSteps": [
+            {
+              "type": "ExecutableStepDTO",
+              "stepOrder": 14,
+              "stepType": { "stepTypeId": 3, "stepTypeKey": "interval" },
+              "endCondition": { "conditionTypeId": 10, "conditionTypeKey": "reps" },
+              "endConditionValue": 12.0,
+              "category": "TRICEPS_EXTENSION",
+              "exerciseName": "DUMBBELL_TRICEPS_EXTENSION"
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepOrder": 15,
+              "stepType": { "stepTypeId": 5, "stepTypeKey": "rest" },
+              "endCondition": { "conditionTypeId": 2, "conditionTypeKey": "time" },
+              "endConditionValue": 45.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

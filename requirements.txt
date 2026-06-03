@@ -1,0 +1,2 @@
+garminconnect[workout]>=0.2.20
+click>=8.1.0

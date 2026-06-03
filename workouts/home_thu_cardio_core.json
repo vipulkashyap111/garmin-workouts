@@ -1,0 +1,288 @@
+{
+  "description": "Home version. Bodyweight cardio intervals + core with dumbbells. No gym needed.",
+  "sportType": {
+    "sportTypeId": 5,
+    "sportTypeKey": "strength_training"
+  },
+  "workoutName": "HOME Thu: Cardio + Core",
+  "workoutSegments": [
+    {
+      "segmentOrder": 1,
+      "sportType": {
+        "sportTypeId": 5,
+        "sportTypeKey": "strength_training"
+      },
+      "workoutSteps": [
+        {
+          "description": "Jog in place + arm circles + leg swings",
+          "endCondition": {
+            "conditionTypeId": 2,
+            "conditionTypeKey": "time"
+          },
+          "endConditionValue": 300,
+          "stepOrder": 1,
+          "stepType": {
+            "stepTypeId": 1,
+            "stepTypeKey": "warmup"
+          },
+          "type": "ExecutableStepDTO"
+        },
+        {
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 4,
+          "numberOfIterations": 4,
+          "skipLastRestStep": true,
+          "stepOrder": 2,
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "type": "RepeatGroupDTO",
+          "workoutSteps": [
+            {
+              "category": "CARDIO",
+              "description": "Jumping jacks (hard pace)",
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 60,
+              "exerciseName": "JUMPING_JACKS",
+              "stepOrder": 3,
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "type": "ExecutableStepDTO"
+            },
+            {
+              "category": "WARM_UP",
+              "description": "March in place",
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 30,
+              "exerciseName": "WALKING_HIGH_KNEES",
+              "stepOrder": 4,
+              "stepType": {
+                "stepTypeId": 4,
+                "stepTypeKey": "recovery"
+              },
+              "type": "ExecutableStepDTO"
+            },
+            {
+              "category": "WARM_UP",
+              "description": "High knees (push it)",
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 60,
+              "exerciseName": "WALKING_HIGH_KNEES",
+              "stepOrder": 5,
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "type": "ExecutableStepDTO"
+            },
+            {
+              "category": "WARM_UP",
+              "description": "March in place",
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 30,
+              "exerciseName": "WALKING_HIGH_KNEES",
+              "stepOrder": 6,
+              "stepType": {
+                "stepTypeId": 4,
+                "stepTypeKey": "recovery"
+              },
+              "type": "ExecutableStepDTO"
+            }
+          ]
+        },
+        {
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 3,
+          "numberOfIterations": 3,
+          "skipLastRestStep": true,
+          "stepOrder": 7,
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "type": "RepeatGroupDTO",
+          "workoutSteps": [
+            {
+              "category": "PLANK",
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 45,
+              "exerciseName": "PLANK",
+              "stepOrder": 8,
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "type": "ExecutableStepDTO"
+            },
+            {
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 15,
+              "stepOrder": 9,
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "type": "ExecutableStepDTO"
+            },
+            {
+              "category": "CORE",
+              "description": "With DB for extra load",
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 20,
+              "exerciseName": "RUSSIAN_TWIST",
+              "stepOrder": 10,
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "type": "ExecutableStepDTO"
+            },
+            {
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 15,
+              "stepOrder": 11,
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "type": "ExecutableStepDTO"
+            },
+            {
+              "category": "HIP_STABILITY",
+              "description": "Bird dogs 12/side",
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 12,
+              "exerciseName": "QUADRUPED_WITH_LEG_LIFT",
+              "stepOrder": 12,
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "type": "ExecutableStepDTO"
+            },
+            {
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 15,
+              "stepOrder": 13,
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "type": "ExecutableStepDTO"
+            },
+            {
+              "category": "HIP_STABILITY",
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 10,
+              "exerciseName": "DEAD_BUG",
+              "stepOrder": 14,
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "type": "ExecutableStepDTO"
+            },
+            {
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 15,
+              "stepOrder": 15,
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "type": "ExecutableStepDTO"
+            },
+            {
+              "category": "PLANK",
+              "description": "Each side",
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 60,
+              "exerciseName": "SIDE_PLANK",
+              "stepOrder": 16,
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "type": "ExecutableStepDTO"
+            },
+            {
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 30,
+              "stepOrder": 17,
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "type": "ExecutableStepDTO"
+            }
+          ]
+        },
+        {
+          "description": "Stretch",
+          "endCondition": {
+            "conditionTypeId": 2,
+            "conditionTypeKey": "time"
+          },
+          "endConditionValue": 300,
+          "stepOrder": 18,
+          "stepType": {
+            "stepTypeId": 2,
+            "stepTypeKey": "cooldown"
+          },
+          "type": "ExecutableStepDTO"
+        }
+      ]
+    }
+  ]
+}

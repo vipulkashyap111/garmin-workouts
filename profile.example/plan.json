@@ -1,0 +1,14 @@
+{
+  "currentPlan": "Example weekly plan. Replace with your structure.",
+  "week": 1,
+  "schedule": {
+    "monday": "Upper body strength",
+    "tuesday": "Sport / skill day",
+    "wednesday": "Conditioning",
+    "thursday": "Lower body strength",
+    "friday": "Sport / skill day",
+    "saturday": "Z2 aerobic walk",
+    "sunday": "Rest or re-test"
+  },
+  "notes": "Add HRV protocol, sleep floors, autoregulation gates here."
+}

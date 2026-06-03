@@ -1,0 +1,30 @@
+{
+  "shortTerm": [
+    {
+      "goal": "Example short-term goal (replace with yours)",
+      "target": "Specific measurable target",
+      "deadline": "YYYY-MM-DD"
+    }
+  ],
+  "longTerm": [
+    {
+      "goal": "Example long-term goal",
+      "target": "Specific measurable target"
+    }
+  ],
+  "kpis": {
+    "baselineDate": "YYYY-MM-DD",
+    "horizon": "12 weeks",
+    "strength_1rm_lbs": {
+      "barbell_back_squat": {"baseline": null, "target": null, "note": "Set on first lift session"}
+    },
+    "power_kpis": {
+      "vertical_jump_in": {"baseline": null, "target": "+3in over 12 weeks"}
+    }
+  },
+  "measurementTools": {
+    "strength": "python workout.py lifts --weeks 16",
+    "retest": "python workout.py retest add --vertical X --broad X --shuttle X --hop-l X --hop-r X --bodyweight X",
+    "weight": "python workout.py weight log <lbs>"
+  }
+}

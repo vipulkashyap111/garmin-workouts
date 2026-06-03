@@ -1,0 +1,36 @@
+# Personal data — never commit
+profile/
+workouts/personal/
+
+# Garmin credentials / tokens
+.garminconnect/
+*cookies*.json
+*session*.json
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local debug / scratch
+debug_*.py
+scratch_*.py
+*.log
+test_perm.txt

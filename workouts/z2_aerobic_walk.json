@@ -1,0 +1,43 @@
+{
+  "workoutName": "Z2 Aerobic Base Walk (35min)",
+  "description": "HRV ceiling builder. Easy effort, HR zone 2 (110-130 bpm). Nose breathing only — if you can't, slow down. Walk, easy bike, or treadmill incline.",
+  "sportType": {
+    "sportTypeId": 3,
+    "sportTypeKey": "training"
+  },
+  "workoutSegments": [
+    {
+      "segmentOrder": 1,
+      "sportType": {
+        "sportTypeId": 3,
+        "sportTypeKey": "training"
+      },
+      "workoutSteps": [
+        {
+          "type": "ExecutableStepDTO",
+          "stepOrder": 1,
+          "stepType": { "stepTypeId": 1, "stepTypeKey": "warmup" },
+          "endCondition": { "conditionTypeId": 2, "conditionTypeKey": "time" },
+          "endConditionValue": 300.0,
+          "description": "Easy walk warmup. Loose hips, gradual HR climb."
+        },
+        {
+          "type": "ExecutableStepDTO",
+          "stepOrder": 2,
+          "stepType": { "stepTypeId": 3, "stepTypeKey": "interval" },
+          "endCondition": { "conditionTypeId": 2, "conditionTypeKey": "time" },
+          "endConditionValue": 1500.0,
+          "description": "Z2 main: 25 min. Target HR 110-130. Nose breathing. If breathing through mouth, SLOW DOWN. This is recovery, not training."
+        },
+        {
+          "type": "ExecutableStepDTO",
+          "stepOrder": 3,
+          "stepType": { "stepTypeId": 2, "stepTypeKey": "cooldown" },
+          "endCondition": { "conditionTypeId": 2, "conditionTypeKey": "time" },
+          "endConditionValue": 300.0,
+          "description": "Cooldown walk. Deep nasal breaths."
+        }
+      ]
+    }
+  ]
+}

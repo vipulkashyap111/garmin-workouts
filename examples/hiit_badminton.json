@@ -1,0 +1,122 @@
+{
+  "workoutName": "Badminton HIIT Agility",
+  "description": "Court-style HIIT for badminton speed and explosiveness. 4 rounds.",
+  "sportType": {
+    "sportTypeId": 62,
+    "sportTypeKey": "hiit"
+  },
+  "workoutSegments": [
+    {
+      "segmentOrder": 1,
+      "sportType": {
+        "sportTypeId": 62,
+        "sportTypeKey": "hiit"
+      },
+      "workoutSteps": [
+        {
+          "type": "ExecutableStepDTO",
+          "stepOrder": 1,
+          "stepType": { "stepTypeId": 1, "stepTypeKey": "warmup" },
+          "endCondition": { "conditionTypeId": 2, "conditionTypeKey": "time" },
+          "endConditionValue": 300.0,
+          "description": "Light jog + dynamic stretches"
+        },
+        {
+          "type": "RepeatGroupDTO",
+          "stepOrder": 2,
+          "stepType": { "stepTypeId": 6, "stepTypeKey": "repeat" },
+          "numberOfIterations": 4,
+          "endCondition": { "conditionTypeId": 7, "conditionTypeKey": "iterations" },
+          "endConditionValue": 4.0,
+          "skipLastRestStep": true,
+          "workoutSteps": [
+            {
+              "type": "ExecutableStepDTO",
+              "stepOrder": 3,
+              "stepType": { "stepTypeId": 3, "stepTypeKey": "interval" },
+              "endCondition": { "conditionTypeId": 2, "conditionTypeKey": "time" },
+              "endConditionValue": 30.0,
+              "description": "Shuttle runs (court lines)"
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepOrder": 4,
+              "stepType": { "stepTypeId": 5, "stepTypeKey": "rest" },
+              "endCondition": { "conditionTypeId": 2, "conditionTypeKey": "time" },
+              "endConditionValue": 15.0
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepOrder": 5,
+              "stepType": { "stepTypeId": 3, "stepTypeKey": "interval" },
+              "endCondition": { "conditionTypeId": 2, "conditionTypeKey": "time" },
+              "endConditionValue": 30.0,
+              "description": "Lateral lunges"
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepOrder": 6,
+              "stepType": { "stepTypeId": 5, "stepTypeKey": "rest" },
+              "endCondition": { "conditionTypeId": 2, "conditionTypeKey": "time" },
+              "endConditionValue": 15.0
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepOrder": 7,
+              "stepType": { "stepTypeId": 3, "stepTypeKey": "interval" },
+              "endCondition": { "conditionTypeId": 2, "conditionTypeKey": "time" },
+              "endConditionValue": 30.0,
+              "description": "Shadow badminton (6 corners)"
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepOrder": 8,
+              "stepType": { "stepTypeId": 5, "stepTypeKey": "rest" },
+              "endCondition": { "conditionTypeId": 2, "conditionTypeKey": "time" },
+              "endConditionValue": 15.0
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepOrder": 9,
+              "stepType": { "stepTypeId": 3, "stepTypeKey": "interval" },
+              "endCondition": { "conditionTypeId": 2, "conditionTypeKey": "time" },
+              "endConditionValue": 30.0,
+              "description": "Jump squats"
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepOrder": 10,
+              "stepType": { "stepTypeId": 5, "stepTypeKey": "rest" },
+              "endCondition": { "conditionTypeId": 2, "conditionTypeKey": "time" },
+              "endConditionValue": 15.0
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepOrder": 11,
+              "stepType": { "stepTypeId": 3, "stepTypeKey": "interval" },
+              "endCondition": { "conditionTypeId": 2, "conditionTypeKey": "time" },
+              "endConditionValue": 30.0,
+              "description": "High knees"
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepOrder": 12,
+              "stepType": { "stepTypeId": 5, "stepTypeKey": "rest" },
+              "endCondition": { "conditionTypeId": 2, "conditionTypeKey": "time" },
+              "endConditionValue": 90.0,
+              "description": "Round rest"
+            }
+          ]
+        },
+        {
+          "type": "ExecutableStepDTO",
+          "stepOrder": 13,
+          "stepType": { "stepTypeId": 2, "stepTypeKey": "cooldown" },
+          "endCondition": { "conditionTypeId": 2, "conditionTypeKey": "time" },
+          "endConditionValue": 300.0,
+          "description": "Walk + static stretches"
+        }
+      ]
+    }
+  ]
+}

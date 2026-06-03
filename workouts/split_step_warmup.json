@@ -1,0 +1,103 @@
+{
+  "workoutName": "Split-Step Warmup (3-min)",
+  "description": "Pre-badminton primer: 6 x 30s reactive drills to prime split-step explosiveness. Do BEFORE every badminton session, after general warmup.",
+  "sportType": {
+    "sportTypeId": 5,
+    "sportTypeKey": "strength_training"
+  },
+  "workoutSegments": [
+    {
+      "segmentOrder": 1,
+      "sportType": {
+        "sportTypeId": 5,
+        "sportTypeKey": "strength_training"
+      },
+      "workoutSteps": [
+        {
+          "description": "Pogo Hops 30s: feet together, tiny fast hops, balls of feet",
+          "endCondition": {
+            "conditionTypeId": 2,
+            "conditionTypeKey": "time"
+          },
+          "endConditionValue": 30,
+          "stepOrder": 1,
+          "stepType": {
+            "stepTypeId": 3,
+            "stepTypeKey": "interval"
+          },
+          "type": "ExecutableStepDTO"
+        },
+        {
+          "description": "Ankle Hops 30s: super-fast turnover, knees minimal bend",
+          "endCondition": {
+            "conditionTypeId": 2,
+            "conditionTypeKey": "time"
+          },
+          "endConditionValue": 30,
+          "stepOrder": 2,
+          "stepType": {
+            "stepTypeId": 3,
+            "stepTypeKey": "interval"
+          },
+          "type": "ExecutableStepDTO"
+        },
+        {
+          "description": "Lateral Pogos 30s: side-to-side hops, athletic stance",
+          "endCondition": {
+            "conditionTypeId": 2,
+            "conditionTypeKey": "time"
+          },
+          "endConditionValue": 30,
+          "stepOrder": 3,
+          "stepType": {
+            "stepTypeId": 3,
+            "stepTypeKey": "interval"
+          },
+          "type": "ExecutableStepDTO"
+        },
+        {
+          "description": "Skater Bounds 30s: explosive lateral, single-leg landing",
+          "endCondition": {
+            "conditionTypeId": 2,
+            "conditionTypeKey": "time"
+          },
+          "endConditionValue": 30,
+          "stepOrder": 4,
+          "stepType": {
+            "stepTypeId": 3,
+            "stepTypeKey": "interval"
+          },
+          "type": "ExecutableStepDTO"
+        },
+        {
+          "description": "Rope Skip 30s: boxer skip or double-unders, fast tempo",
+          "endCondition": {
+            "conditionTypeId": 2,
+            "conditionTypeKey": "time"
+          },
+          "endConditionValue": 30,
+          "stepOrder": 5,
+          "stepType": {
+            "stepTypeId": 3,
+            "stepTypeKey": "interval"
+          },
+          "type": "ExecutableStepDTO"
+        },
+        {
+          "description": "On-court Split-Step Practice 30s: small whisper hop into wide athletic stance, repeat. Visualize opponent contact moment.",
+          "endCondition": {
+            "conditionTypeId": 2,
+            "conditionTypeKey": "time"
+          },
+          "endConditionValue": 30,
+          "stepOrder": 6,
+          "stepType": {
+            "stepTypeId": 3,
+            "stepTypeKey": "interval"
+          },
+          "type": "ExecutableStepDTO"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,426 @@
+{
+  "description": "DB bench, rows, OHP, face pulls. Reduced plyo: med ball push press, cable woodchops, plyo push-ups. Core: hanging knee raises, Pallof press. ~45min moderate intensity.",
+  "sportType": {
+    "sportTypeId": 5,
+    "sportTypeKey": "strength_training"
+  },
+  "workoutName": "Upper Body + Plyo",
+  "workoutSegments": [
+    {
+      "segmentOrder": 1,
+      "sportType": {
+        "sportTypeId": 5,
+        "sportTypeKey": "strength_training"
+      },
+      "workoutSteps": [
+        {
+          "description": "Rope skip: single, double-unders, alternating",
+          "endCondition": {
+            "conditionTypeId": 2,
+            "conditionTypeKey": "time"
+          },
+          "endConditionValue": 300,
+          "stepOrder": 1,
+          "stepType": {
+            "stepTypeId": 1,
+            "stepTypeKey": "warmup"
+          },
+          "type": "ExecutableStepDTO"
+        },
+        {
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 4,
+          "numberOfIterations": 4,
+          "skipLastRestStep": true,
+          "stepOrder": 2,
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "type": "RepeatGroupDTO",
+          "workoutSteps": [
+            {
+              "category": "BENCH_PRESS",
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 8,
+              "exerciseName": "DUMBBELL_BENCH_PRESS",
+              "stepOrder": 3,
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "type": "ExecutableStepDTO"
+            },
+            {
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 90,
+              "stepOrder": 4,
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "type": "ExecutableStepDTO"
+            }
+          ]
+        },
+        {
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 3,
+          "numberOfIterations": 3,
+          "skipLastRestStep": true,
+          "stepOrder": 5,
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "type": "RepeatGroupDTO",
+          "workoutSteps": [
+            {
+              "category": "ROW",
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 8,
+              "exerciseName": "BENT_OVER_BARBELL_ROW",
+              "stepOrder": 6,
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "type": "ExecutableStepDTO"
+            },
+            {
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 60,
+              "stepOrder": 7,
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "type": "ExecutableStepDTO"
+            }
+          ]
+        },
+        {
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 3,
+          "numberOfIterations": 3,
+          "skipLastRestStep": true,
+          "stepOrder": 8,
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "type": "RepeatGroupDTO",
+          "workoutSteps": [
+            {
+              "category": "SHOULDER_PRESS",
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 8,
+              "exerciseName": "DUMBBELL_SHOULDER_PRESS",
+              "stepOrder": 9,
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "type": "ExecutableStepDTO"
+            },
+            {
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 60,
+              "stepOrder": 10,
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "type": "ExecutableStepDTO"
+            }
+          ]
+        },
+        {
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 3,
+          "numberOfIterations": 3,
+          "skipLastRestStep": true,
+          "stepOrder": 11,
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "type": "RepeatGroupDTO",
+          "workoutSteps": [
+            {
+              "description": "Face Pulls: squeeze shoulder blades",
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 12,
+              "stepOrder": 12,
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "type": "ExecutableStepDTO"
+            },
+            {
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 45,
+              "stepOrder": 13,
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "type": "ExecutableStepDTO"
+            }
+          ]
+        },
+        {
+          "description": "Transition to plyo",
+          "endCondition": {
+            "conditionTypeId": 2,
+            "conditionTypeKey": "time"
+          },
+          "endConditionValue": 60,
+          "stepOrder": 14,
+          "stepType": {
+            "stepTypeId": 5,
+            "stepTypeKey": "rest"
+          },
+          "type": "ExecutableStepDTO"
+        },
+        {
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 2,
+          "numberOfIterations": 2,
+          "skipLastRestStep": true,
+          "stepOrder": 15,
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "type": "RepeatGroupDTO",
+          "workoutSteps": [
+            {
+              "description": "Med Ball Push Press: explosive press overhead",
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 8,
+              "stepOrder": 16,
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "type": "ExecutableStepDTO"
+            },
+            {
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 30,
+              "stepOrder": 17,
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "type": "ExecutableStepDTO"
+            },
+            {
+              "category": "CHOP",
+              "description": "High to low, 8 per side",
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 8,
+              "exerciseName": "CABLE_WOODCHOP",
+              "stepOrder": 18,
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "type": "ExecutableStepDTO"
+            },
+            {
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 30,
+              "stepOrder": 19,
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "type": "ExecutableStepDTO"
+            },
+            {
+              "description": "Plyo Push-Ups: explosive, hands leave ground",
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 6,
+              "stepOrder": 20,
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "type": "ExecutableStepDTO"
+            },
+            {
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 45,
+              "stepOrder": 21,
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "type": "ExecutableStepDTO"
+            }
+          ]
+        },
+        {
+          "description": "Transition to core",
+          "endCondition": {
+            "conditionTypeId": 2,
+            "conditionTypeKey": "time"
+          },
+          "endConditionValue": 30,
+          "stepOrder": 22,
+          "stepType": {
+            "stepTypeId": 5,
+            "stepTypeKey": "rest"
+          },
+          "type": "ExecutableStepDTO"
+        },
+        {
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 3,
+          "numberOfIterations": 3,
+          "skipLastRestStep": true,
+          "stepOrder": 23,
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "type": "RepeatGroupDTO",
+          "workoutSteps": [
+            {
+              "category": "LEG_RAISE",
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 10,
+              "exerciseName": "HANGING_KNEE_RAISE",
+              "stepOrder": 24,
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "type": "ExecutableStepDTO"
+            },
+            {
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 30,
+              "stepOrder": 25,
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "type": "ExecutableStepDTO"
+            },
+            {
+              "description": "Pallof Press: resist rotation, 10 per side",
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 10,
+              "stepOrder": 26,
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "type": "ExecutableStepDTO"
+            },
+            {
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 30,
+              "stepOrder": 27,
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "type": "ExecutableStepDTO"
+            }
+          ]
+        },
+        {
+          "description": "Stretch chest, shoulders, lats",
+          "endCondition": {
+            "conditionTypeId": 2,
+            "conditionTypeKey": "time"
+          },
+          "endConditionValue": 300,
+          "stepOrder": 28,
+          "stepType": {
+            "stepTypeId": 2,
+            "stepTypeKey": "cooldown"
+          },
+          "type": "ExecutableStepDTO"
+        }
+      ]
+    }
+  ]
+}
