@@ -151,3 +151,42 @@ Exercise names and categories follow Garmin's FIT SDK. Common examples:
 | LUNGE | DUMBBELL_LUNGES, WALKING_LUNGE |
 
 Full catalog: [garmin-strength-api exercise catalog](https://github.com/n1t3k/garmin-strength-api/blob/main/docs/exercise-catalog.md)
+
+## AI Coach (Copilot CLI extension)
+
+This repo ships with a [GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli) extension at [`extensions/personal-trainer/`](extensions/personal-trainer/) that turns Copilot into a personal fitness coach driven by your Garmin data.
+
+When you mention fitness topics in chat, the extension:
+
+- Injects coaching context (date-awareness, weekly review protocol, universal programming rules)
+- Exposes `trainer_*` tools that wrap `workout.py` (read activities/recovery/lifts, manage goals/plan, log check-ins, push workouts to your watch)
+- Personalizes responses from a local `trainer-profile.json` (your name, device, sport, personal rules) — kept out of git
+
+Install:
+
+```bash
+# Symlink (auto-syncs with git pull)
+ln -s "$PWD/extensions/personal-trainer" ~/.copilot/extensions/personal-trainer
+
+# Create your profile (one-time)
+mkdir -p ~/.garmin-workouts/profile
+cp extensions/personal-trainer/trainer-profile.example.json \
+   ~/.garmin-workouts/profile/trainer-profile.json
+# then edit ~/.garmin-workouts/profile/trainer-profile.json
+```
+
+See [`extensions/personal-trainer/INSTALL.md`](extensions/personal-trainer/INSTALL.md) for Windows/symlink alternatives and troubleshooting, and [`extensions/personal-trainer/README.md`](extensions/personal-trainer/README.md) for how to customize the coach with your own learned rules.
+
+The extension is Copilot-CLI-specific (uses `@github/copilot-sdk/extension`). The `workout.py` CLI works standalone without it.
+
+## Disclaimer
+
+This is a personal training tool. It is **not medical advice**.
+
+- Workout recommendations, recovery analyses, and any coaching output from the AI extension are computer-generated suggestions, not professional guidance.
+- Strength loads, plyometric volume, HRV-based readiness interpretations, and rest/training decisions can be wrong for your individual physiology, injury history, or medical conditions.
+- If you have any pain, illness, pregnancy, cardiac concerns, or other medical conditions — or are starting a new exercise program — consult a qualified healthcare professional or certified coach before using this tool.
+- The authors and contributors accept no responsibility for injury, illness, or other harm resulting from use of this software. See [`LICENSE`](LICENSE) for the full terms.
+
+Use your own judgment. Stop if something hurts. Skip the prescribed session if your body tells you to.
+
