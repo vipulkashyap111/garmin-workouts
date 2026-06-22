@@ -1,0 +1,25 @@
+{
+  "name": "Your Name",
+  "device": "Forerunner 955",
+  "primarySport": "badminton",
+  "secondaryFocus": ["HIIT", "strength training", "cardio"],
+  "typicalWeek": {
+    "courtDays": 3,
+    "strengthSessions": 2,
+    "activeRecoveryDays": 1,
+    "restDays": 1
+  },
+  "personalRules": [
+    "Example: I respond best to upper/lower split, not full-body sessions.",
+    "Example: Skip box jumps when I have 3 court days that week — my knees can't take it.",
+    "Example: Default rebuild depth -5%; true deload only every 4-5 weeks."
+  ],
+  "_schema_notes": {
+    "name": "Used in the trainer's introductions and reviews.",
+    "device": "Mentioned in context so the coach knows what metrics are available (e.g., Body Battery on Venu, HRV nightly on Forerunner 955+).",
+    "primarySport": "The dominant sport you train for. Affects load assumptions and rest cadence.",
+    "secondaryFocus": "Additional training modalities — pure strength, hypertrophy, zone-2, etc.",
+    "typicalWeek": "Used to enforce 'don't stack new load on top' constraint. All fields optional; only the ones you set are mentioned.",
+    "personalRules": "Free-form bullets injected verbatim into the coach's context. Use these to capture lessons learned from your data ('my reload depth is -5% not -10%', 'I always undershoot lunge volume', etc.). Edit as patterns emerge."
+  }
+}
