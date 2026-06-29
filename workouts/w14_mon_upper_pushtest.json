@@ -1,0 +1,262 @@
+{
+  "workoutName": "W14 Mon: Upper Push-Test (+2.5)",
+  "description": "Push-test \u2014 small +2.5 progression from W13 actuals. OHP 77.5x5, Row 65x6, Pull-up BWx8, Bench 62.5x6. RPE 7-8. No grinders; if OHP set 2 is heavy, hold.",
+  "sportType": {
+    "sportTypeId": 5,
+    "sportTypeKey": "strength_training"
+  },
+  "workoutSegments": [
+    {
+      "segmentOrder": 1,
+      "sportType": {
+        "sportTypeId": 5,
+        "sportTypeKey": "strength_training"
+      },
+      "workoutSteps": [
+        {
+          "type": "RepeatGroupDTO",
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "numberOfIterations": 4,
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 4.0,
+          "skipLastRestStep": true,
+          "workoutSteps": [
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 5.0,
+              "category": "SHOULDER_PRESS",
+              "exerciseName": "BARBELL_OVERHEAD_PRESS",
+              "weightValue": 35.0,
+              "weightUnit": {
+                "unitId": 8,
+                "unitKey": "kilogram",
+                "factor": 1000.0
+              },
+              "stepOrder": 2
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 90.0,
+              "stepOrder": 3
+            }
+          ],
+          "stepOrder": 1
+        },
+        {
+          "type": "RepeatGroupDTO",
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "numberOfIterations": 3,
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 3.0,
+          "skipLastRestStep": true,
+          "workoutSteps": [
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 6.0,
+              "category": "ROW",
+              "exerciseName": "DUMBBELL_ROW",
+              "weightValue": 29.5,
+              "weightUnit": {
+                "unitId": 8,
+                "unitKey": "kilogram",
+                "factor": 1000.0
+              },
+              "stepOrder": 5
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 75.0,
+              "stepOrder": 6
+            }
+          ],
+          "stepOrder": 4
+        },
+        {
+          "type": "RepeatGroupDTO",
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "numberOfIterations": 3,
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 3.0,
+          "skipLastRestStep": true,
+          "workoutSteps": [
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 8.0,
+              "category": "PULL_UP",
+              "exerciseName": "PULL_UP",
+              "stepOrder": 8
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 90.0,
+              "stepOrder": 9
+            }
+          ],
+          "stepOrder": 7
+        },
+        {
+          "type": "RepeatGroupDTO",
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "numberOfIterations": 3,
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 3.0,
+          "skipLastRestStep": true,
+          "workoutSteps": [
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 6.0,
+              "category": "BENCH_PRESS",
+              "exerciseName": "DUMBBELL_BENCH_PRESS",
+              "weightValue": 28.5,
+              "weightUnit": {
+                "unitId": 8,
+                "unitKey": "kilogram",
+                "factor": 1000.0
+              },
+              "stepOrder": 11
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 75.0,
+              "stepOrder": 12
+            }
+          ],
+          "stepOrder": 10
+        },
+        {
+          "type": "RepeatGroupDTO",
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "numberOfIterations": 2,
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 2.0,
+          "skipLastRestStep": true,
+          "workoutSteps": [
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 10.0,
+              "category": "CORE",
+              "exerciseName": "HANGING_KNEE_RAISE",
+              "stepOrder": 14
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 45.0,
+              "stepOrder": 15
+            }
+          ],
+          "stepOrder": 13
+        }
+      ]
+    }
+  ]
+}

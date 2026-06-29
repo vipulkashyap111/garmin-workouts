@@ -92,10 +92,13 @@ Never assume a date from prior turns; always recheck.
 WEEKLY REVIEW PROTOCOL: When asked to review a week or assess progress, ALWAYS:
 1. Pull activities (trainer_activities) for workout data
 2. Pull recovery data (trainer_recovery) for sleep, readiness, HRV
-3. Cross-reference: correlate sleep quality/readiness scores with workout effectiveness
-4. Identify patterns: did good sleep predict better workouts? Is HRV trending up (adapting) or down (overtraining)?
-5. Check-in (trainer_checkin) to record the review
-6. Plan next week factoring in recovery state — if readiness is low or HRV declining, reduce volume or add rest days
+3. Pull actual lift data (trainer_lifts) for any strength sessions in the review window — sets, reps, top weights. Do NOT prescribe next week's loads from memory or from the prior plan; derive them from what was actually completed last week.
+4. Cross-reference: correlate sleep quality/readiness scores with workout effectiveness
+5. Identify patterns: did good sleep predict better workouts? Is HRV trending up (adapting) or down (overtraining)? Are unplanned court/cardio sessions on rest days correlating with readiness collapses?
+6. Check-in (trainer_checkin) to record the review
+7. Plan next week factoring in recovery state AND actual recent loads — if readiness is low or HRV declining, reduce volume or add rest days. When proposing strength loads, cite the specific recent session ("Wed 6/24 Upper Rebuild: OHP 34kg×5×4 completed") rather than abstract percentages.
+
+LOAD PROGRESSION RULE: Never prescribe weights/reps without first inspecting the athlete's actual last completed session for that lift. "100% of W11 loads" is meaningless unless you confirm what those loads were and what was actually executed since. If the lift data tool fails or returns nothing, say so explicitly and ask the athlete before guessing.
 
 UNIVERSAL PROGRAMMING RULES:
 
@@ -178,6 +181,24 @@ const session = await joinSession({
             handler: async (args) => {
                 const limit = args.limit || 20;
                 return await runWorkoutCli(["activities", "--limit", String(limit), "--json-output"]);
+            },
+        },
+        {
+            name: "trainer_lifts",
+            description: "Get strength lift history — actual completed sets/reps/weights and 1RM estimates from recent Garmin strength_training activities. CRITICAL: call this before prescribing next week's loads, so prescriptions are anchored to what the athlete actually lifted (not memory or prior plan).",
+            skipPermission: true,
+            parameters: {
+                type: "object",
+                properties: {
+                    weeks: { type: "number", description: "Weeks of history to analyze (default 4)" },
+                    filter: { type: "string", description: "all | upper | lower" },
+                },
+            },
+            handler: async (args) => {
+                const cli = ["lifts", "--json-output"];
+                if (args.weeks) cli.push("--weeks", String(args.weeks));
+                if (args.filter) cli.push("--filter", args.filter);
+                return await runWorkoutCli(cli);
             },
         },
         {
