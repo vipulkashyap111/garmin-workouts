@@ -1,6 +1,6 @@
 {
-  "workoutName": "W14 Sat: Lower Push-Test (+5)",
-  "description": "Push-test \u2014 +5lb progression from W13 actuals. Squat 150x5x4, RDL 120x6x3, Lunge 40x10x3. RPE 7-8. No PR attempts.",
+  "workoutName": "W14 Sat: Lower Push-Test (+5) + Plyo",
+  "description": "Push-test +5lb on Squat/RDL. Box Jumps front-loaded as power primer (2-court week, plyo OK). RPE 7-8, NO PR attempts.",
   "sportType": {
     "sportTypeId": 5,
     "sportTypeKey": "strength_training"
@@ -13,6 +13,51 @@
         "sportTypeKey": "strength_training"
       },
       "workoutSteps": [
+        {
+          "type": "RepeatGroupDTO",
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "numberOfIterations": 3,
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 3.0,
+          "skipLastRestStep": true,
+          "workoutSteps": [
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 4.0,
+              "category": "PLYO",
+              "exerciseName": "BOX_JUMP",
+              "stepOrder": 100
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 90.0,
+              "stepOrder": 101
+            }
+          ],
+          "stepOrder": 1
+        },
         {
           "type": "RepeatGroupDTO",
           "stepType": {
@@ -62,7 +107,7 @@
               "stepOrder": 3
             }
           ],
-          "stepOrder": 1
+          "stepOrder": 2
         },
         {
           "type": "RepeatGroupDTO",
@@ -113,7 +158,7 @@
               "stepOrder": 6
             }
           ],
-          "stepOrder": 4
+          "stepOrder": 3
         },
         {
           "type": "RepeatGroupDTO",
@@ -164,7 +209,7 @@
               "stepOrder": 9
             }
           ],
-          "stepOrder": 7
+          "stepOrder": 4
         },
         {
           "type": "RepeatGroupDTO",
@@ -209,7 +254,7 @@
               "stepOrder": 12
             }
           ],
-          "stepOrder": 10
+          "stepOrder": 5
         },
         {
           "type": "RepeatGroupDTO",
@@ -254,7 +299,7 @@
               "stepOrder": 15
             }
           ],
-          "stepOrder": 13
+          "stepOrder": 6
         }
       ]
     }
