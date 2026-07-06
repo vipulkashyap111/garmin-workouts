@@ -1,0 +1,307 @@
+{
+  "workoutName": "W15 Thu: Lower + Lateral Bound",
+  "description": "3-court week. Lateral bound added for court-movement single-leg power. +5lb on Squat/RDL from W14. Rest specified all sets. RPE 7-8, NO PRs.",
+  "sportType": {
+    "sportTypeId": 5,
+    "sportTypeKey": "strength_training"
+  },
+  "workoutSegments": [
+    {
+      "segmentOrder": 1,
+      "sportType": {
+        "sportTypeId": 5,
+        "sportTypeKey": "strength_training"
+      },
+      "workoutSteps": [
+        {
+          "type": "RepeatGroupDTO",
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "numberOfIterations": 3,
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 3.0,
+          "skipLastRestStep": true,
+          "workoutSteps": [
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 6.0,
+              "category": "PLYO",
+              "exerciseName": "LATERAL_BOUND",
+              "stepOrder": 1
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 60.0,
+              "stepOrder": 11
+            }
+          ],
+          "stepOrder": 1
+        },
+        {
+          "type": "RepeatGroupDTO",
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "numberOfIterations": 4,
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 4.0,
+          "skipLastRestStep": true,
+          "workoutSteps": [
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 5.0,
+              "category": "SQUAT",
+              "exerciseName": "BARBELL_BACK_SQUAT",
+              "stepOrder": 2,
+              "weightValue": 70.5,
+              "weightUnit": {
+                "unitId": 8,
+                "unitKey": "kilogram",
+                "factor": 1000.0
+              }
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 150.0,
+              "stepOrder": 21
+            }
+          ],
+          "stepOrder": 2
+        },
+        {
+          "type": "RepeatGroupDTO",
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "numberOfIterations": 3,
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 3.0,
+          "skipLastRestStep": true,
+          "workoutSteps": [
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 6.0,
+              "category": "DEADLIFT",
+              "exerciseName": "ROMANIAN_DEADLIFT",
+              "stepOrder": 3,
+              "weightValue": 57.0,
+              "weightUnit": {
+                "unitId": 8,
+                "unitKey": "kilogram",
+                "factor": 1000.0
+              }
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 90.0,
+              "stepOrder": 31
+            }
+          ],
+          "stepOrder": 3
+        },
+        {
+          "type": "RepeatGroupDTO",
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "numberOfIterations": 3,
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 3.0,
+          "skipLastRestStep": true,
+          "workoutSteps": [
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 8.0,
+              "category": "LUNGE",
+              "exerciseName": "DUMBBELL_LUNGES",
+              "stepOrder": 4,
+              "weightValue": 20.5,
+              "weightUnit": {
+                "unitId": 8,
+                "unitKey": "kilogram",
+                "factor": 1000.0
+              }
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 90.0,
+              "stepOrder": 41
+            }
+          ],
+          "stepOrder": 4
+        },
+        {
+          "type": "RepeatGroupDTO",
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "numberOfIterations": 3,
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 3.0,
+          "skipLastRestStep": true,
+          "workoutSteps": [
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 15.0,
+              "category": "CALF_RAISE",
+              "exerciseName": "STANDING_CALF_RAISE",
+              "stepOrder": 5
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 45.0,
+              "stepOrder": 51
+            }
+          ],
+          "stepOrder": 5
+        },
+        {
+          "type": "RepeatGroupDTO",
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "numberOfIterations": 2,
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 2.0,
+          "skipLastRestStep": true,
+          "workoutSteps": [
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
+              "endConditionValue": 1.0,
+              "category": "CORE",
+              "exerciseName": "PLANK",
+              "stepOrder": 6
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 45.0,
+              "stepOrder": 61
+            }
+          ],
+          "stepOrder": 6
+        }
+      ]
+    }
+  ]
+}
