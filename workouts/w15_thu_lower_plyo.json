@@ -25,7 +25,7 @@
             "conditionTypeKey": "iterations"
           },
           "endConditionValue": 3.0,
-          "skipLastRestStep": true,
+          "skipLastRestStep": false,
           "workoutSteps": [
             {
               "type": "ExecutableStepDTO",
@@ -70,7 +70,7 @@
             "conditionTypeKey": "iterations"
           },
           "endConditionValue": 4.0,
-          "skipLastRestStep": true,
+          "skipLastRestStep": false,
           "workoutSteps": [
             {
               "type": "ExecutableStepDTO",
@@ -121,7 +121,7 @@
             "conditionTypeKey": "iterations"
           },
           "endConditionValue": 3.0,
-          "skipLastRestStep": true,
+          "skipLastRestStep": false,
           "workoutSteps": [
             {
               "type": "ExecutableStepDTO",
@@ -172,7 +172,7 @@
             "conditionTypeKey": "iterations"
           },
           "endConditionValue": 3.0,
-          "skipLastRestStep": true,
+          "skipLastRestStep": false,
           "workoutSteps": [
             {
               "type": "ExecutableStepDTO",
@@ -223,7 +223,7 @@
             "conditionTypeKey": "iterations"
           },
           "endConditionValue": 3.0,
-          "skipLastRestStep": true,
+          "skipLastRestStep": false,
           "workoutSteps": [
             {
               "type": "ExecutableStepDTO",
@@ -268,7 +268,7 @@
             "conditionTypeKey": "iterations"
           },
           "endConditionValue": 2.0,
-          "skipLastRestStep": true,
+          "skipLastRestStep": false,
           "workoutSteps": [
             {
               "type": "ExecutableStepDTO",
