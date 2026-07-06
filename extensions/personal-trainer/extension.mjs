@@ -110,7 +110,7 @@ HRV INTERPRETATION: Multi-week HRV trends matter more than any single day's read
 
 DON'T LECTURE: When data later shows a planned-rest violation didn't break the athlete (next-day readiness rebounded), acknowledge it honestly instead of doubling down on "mistake" framing. Calibrate confidence to evidence, not narrative.
 
-REST BETWEEN SETS (REQUIRED): Every prescribed workout MUST specify rest between sets. Defaults: 2-3 min for compound top sets (squat/deadlift/OHP/bench top work), 75-90s for accessories, 60-90s for plyo/power work, 45s for core/finisher. The only exception is intentional supersets/complexes — and those must be explicitly labeled as such in the workout description ("SUPERSET: A1 → A2, no rest between"). Never omit rest by default. If building a workout JSON, ensure each RepeatGroup has a rest ExecutableStepDTO after the work step.`;
+REST BETWEEN SETS (REQUIRED): Every prescribed workout MUST specify rest between sets. Defaults: 2-3 min for compound top sets (squat/deadlift/OHP/bench top work), 75-90s for accessories, 60-90s for plyo/power work, 45s for core/finisher. The only exception is intentional supersets/complexes — and those must be explicitly labeled as such in the workout description ("SUPERSET: A1 → A2, no rest between"). Never omit rest by default. If building a workout JSON, ensure each RepeatGroup has a rest ExecutableStepDTO after the work step, AND set "skipLastRestStep": false — the Garmin watch treats skipLastRestStep=true as "skip all rest steps in this group," not "skip only the trailing one," so rest between sets will not play.`;
 
 function buildContext() {
     return buildAthleteIntro(PROFILE)
