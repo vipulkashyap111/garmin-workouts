@@ -11,6 +11,7 @@ from pathlib import Path
 from lib.browser_auth import (
     get_cookie_path,
     get_garmin_client,
+    get_token_path,
     has_saved_session,
     load_session_token,
 )
@@ -53,6 +54,28 @@ class BrowserAPI:
         self._csrf = token_data.get("csrf", "")
         self._page = self._context.new_page()
 
+    def _capture_csrf(self, response_headers: dict) -> None:
+        """Read rotated CSRF from response headers and persist if changed.
+
+        Garmin rotates connect-csrf-token after every write (POST/PUT/DELETE).
+        Capturing it here avoids forced re-login between writes.
+        """
+        if not response_headers:
+            return
+        new_csrf = (
+            response_headers.get("connect-csrf-token")
+            or response_headers.get("Connect-Csrf-Token")
+        )
+        if new_csrf and new_csrf != self._csrf:
+            self._csrf = new_csrf
+            try:
+                token_file = get_token_path()
+                data = load_session_token()
+                data["csrf"] = new_csrf
+                token_file.write_text(json.dumps(data, indent=2))
+            except Exception:
+                pass  # in-memory update is enough for the current session
+
     def get(self, url: str, params: dict = None) -> dict:
         self._ensure_started()
         if params:
@@ -65,9 +88,12 @@ class BrowserAPI:
             async ([url, headers]) => {
                 const resp = await fetch(url, { headers, credentials: 'include' });
                 const text = await resp.text();
-                return { status: resp.status, body: text };
+                const respHeaders = {};
+                resp.headers.forEach((v, k) => { respHeaders[k] = v; });
+                return { status: resp.status, body: text, headers: respHeaders };
             }
         """, [url, headers])
+        self._capture_csrf(result.get("headers", {}))
         if result["status"] >= 400:
             raise RuntimeError(f"API error {result['status']}: {url}")
         try:
@@ -91,9 +117,12 @@ class BrowserAPI:
                     body: body ? JSON.stringify(body) : undefined,
                 });
                 const text = await resp.text();
-                return { status: resp.status, body: text };
+                const respHeaders = {};
+                resp.headers.forEach((v, k) => { respHeaders[k] = v; });
+                return { status: resp.status, body: text, headers: respHeaders };
             }
         """, [url, headers, json_data])
+        self._capture_csrf(result.get("headers", {}))
         if result["status"] >= 400:
             raise RuntimeError(f"API error {result['status']}: {url}")
         try:
@@ -109,9 +138,12 @@ class BrowserAPI:
         result = self._page.evaluate("""
             async ([url, headers]) => {
                 const resp = await fetch(url, { method: 'DELETE', headers, credentials: 'include' });
-                return { status: resp.status };
+                const respHeaders = {};
+                resp.headers.forEach((v, k) => { respHeaders[k] = v; });
+                return { status: resp.status, headers: respHeaders };
             }
         """, [url, headers])
+        self._capture_csrf(result.get("headers", {}))
         if result["status"] >= 400:
             raise RuntimeError(f"API error {result['status']}: {url}")
 
