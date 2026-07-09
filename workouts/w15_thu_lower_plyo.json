@@ -1,6 +1,6 @@
 {
-  "workoutName": "W15 Thu: Lower + Lateral Bound",
-  "description": "3-court week. Lateral bound added for court-movement single-leg power. +5lb on Squat/RDL from W14. Rest specified all sets. RPE 7-8, NO PRs.",
+  "workoutName": "W15 Thu: Lower + Lateral Bound + Hip Thrust",
+  "description": "3-court week. Lateral bound plyo primer + glute-focus Hip Thrust added. Rest specified all sets. RPE 7-8, NO PRs. Hip thrust is new \u2014 start conservative, scale up if 95lb feels light.",
   "sportType": {
     "sportTypeId": 5,
     "sportTypeKey": "strength_training"
@@ -235,6 +235,57 @@
                 "conditionTypeId": 10,
                 "conditionTypeKey": "reps"
               },
+              "endConditionValue": 8.0,
+              "category": "HIP_RAISE",
+              "exerciseName": "BARBELL_HIP_THRUST",
+              "weightValue": 43.0,
+              "weightUnit": {
+                "unitId": 8,
+                "unitKey": "kilogram",
+                "factor": 1000.0
+              },
+              "stepOrder": 41
+            },
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 5,
+                "stepTypeKey": "rest"
+              },
+              "endCondition": {
+                "conditionTypeId": 2,
+                "conditionTypeKey": "time"
+              },
+              "endConditionValue": 90.0,
+              "stepOrder": 42
+            }
+          ],
+          "stepOrder": 5
+        },
+        {
+          "type": "RepeatGroupDTO",
+          "stepType": {
+            "stepTypeId": 6,
+            "stepTypeKey": "repeat"
+          },
+          "numberOfIterations": 3,
+          "endCondition": {
+            "conditionTypeId": 7,
+            "conditionTypeKey": "iterations"
+          },
+          "endConditionValue": 3.0,
+          "skipLastRestStep": false,
+          "workoutSteps": [
+            {
+              "type": "ExecutableStepDTO",
+              "stepType": {
+                "stepTypeId": 3,
+                "stepTypeKey": "interval"
+              },
+              "endCondition": {
+                "conditionTypeId": 10,
+                "conditionTypeKey": "reps"
+              },
               "endConditionValue": 15.0,
               "category": "CALF_RAISE",
               "exerciseName": "STANDING_CALF_RAISE",
@@ -254,7 +305,7 @@
               "stepOrder": 51
             }
           ],
-          "stepOrder": 5
+          "stepOrder": 6
         },
         {
           "type": "RepeatGroupDTO",
@@ -299,7 +350,7 @@
               "stepOrder": 61
             }
           ],
-          "stepOrder": 6
+          "stepOrder": 7
         }
       ]
     }
