@@ -185,15 +185,15 @@
                 "conditionTypeKey": "reps"
               },
               "endConditionValue": 8.0,
-              "category": "LUNGE",
-              "exerciseName": "DUMBBELL_LUNGES",
-              "stepOrder": 4,
-              "weightValue": 20.5,
+              "category": "HIP_RAISE",
+              "exerciseName": "BARBELL_HIP_THRUST",
+              "weightValue": 43.0,
               "weightUnit": {
                 "unitId": 8,
                 "unitKey": "kilogram",
                 "factor": 1000.0
-              }
+              },
+              "stepOrder": 41
             },
             {
               "type": "ExecutableStepDTO",
@@ -206,7 +206,7 @@
                 "conditionTypeKey": "time"
               },
               "endConditionValue": 90.0,
-              "stepOrder": 41
+              "stepOrder": 42
             }
           ],
           "stepOrder": 4
@@ -236,15 +236,15 @@
                 "conditionTypeKey": "reps"
               },
               "endConditionValue": 8.0,
-              "category": "HIP_RAISE",
-              "exerciseName": "BARBELL_HIP_THRUST",
-              "weightValue": 43.0,
+              "category": "LUNGE",
+              "exerciseName": "DUMBBELL_LUNGES",
+              "stepOrder": 4,
+              "weightValue": 20.5,
               "weightUnit": {
                 "unitId": 8,
                 "unitKey": "kilogram",
                 "factor": 1000.0
-              },
-              "stepOrder": 41
+              }
             },
             {
               "type": "ExecutableStepDTO",
@@ -257,7 +257,7 @@
                 "conditionTypeKey": "time"
               },
               "endConditionValue": 90.0,
-              "stepOrder": 42
+              "stepOrder": 41
             }
           ],
           "stepOrder": 5
